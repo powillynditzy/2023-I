@@ -1,6 +1,6 @@
 <?php
     define("HOSTNAME", "68.70.164.26");
-    define("BD", "polizona_82");
-    define("USER", "polizona_82");
-    define("PASSWORD", "Poli-Zona82");
+    define("BD", "polizona_XX");
+    define("USER", "polizona_XX");
+    define("PASSWORD", "tu_contraseña");
 ?>
