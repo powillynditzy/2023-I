@@ -1,6 +1,6 @@
 <?PHP
 requiere_once 'config/global.php';	
-include("pruebaConexion.php"); 
+include("index.php"); 
 
 
 //realiza conexion
