@@ -1,10 +1,10 @@
 <?PHP
-requiere_once 'config/global.php';	
+require_once 'config/global.php';	
 include("index.php"); 
 
 
 //realiza conexion
-    $conexion = mysqli_connect($hostname_localhost,$username_localhost,$password_localhost,$database_localhost);
+    $conexion = mysqli_connect(HOSTNAME,USER,PASSWORD,BD);
         
         if ($conexion) {
             $idalcaldia= $_POST ['idalcaldia'];
