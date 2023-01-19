@@ -4,11 +4,17 @@
 <div class="container">
 <div class="row align-items-center">
 <div class="col-12 align-self-center text-center p-4">
-<h1>Ejercicio de conexión</h1>
-Crea una tabla llamada alcaldia con los campos idalcaldia(int) y nbalcaldia(text)
-<br>
-Edita los archivos graba.php  y recupera.php con tu usuario y contraseña de la base de datos
-<br> <br>
+<h1>Ingeniería del conocimiento</h1>
+<h1>Escribe tu nombre</h1>
+
+Agrupación: <br>
+
+Escribir una interfaz html que reciba los parámetros necesarios para armar el siguiente query:
+
+create view conjunta as (select distinct mercado, idindustria,count(*)/(select count(*)from empresa) as conjunta from empresa group by mercado, idindustria)
+
+ejecutar el query con un php desde la interfaz<br>
+ <br>
 
 <form action="recupera.php" method="get">
 <button type="submit">consulta</button>
@@ -18,9 +24,11 @@ Edita los archivos graba.php  y recupera.php con tu usuario y contraseña de la 
 
 <form action="graba.php" method="post">
 <fieldset>
-  <legend> Ingrese alcaldia </legend>
-    <p><label>idalcaldia:<input type="int" name="idalcaldia" /></label> </p>
-    <p><label>nombre:   <input type="text" name="alcaldia" /></label></p>
+  <legend> Ingrese datos </legend>
+    <p><label>tabla: <input type="text" name="tabla" /></label> </p>
+    <p><label>campo1: <input type="text" name="campo1" /></label> </p>
+    <p><label>campo2:   <input type="text" name="campo2" /></label></p>
+    <p><label>nombre de la red: <input type="text" name="red" /></label> </p>
     <p><input type="submit" value="enviar"/></p>
 </fieldset>
 </form>
