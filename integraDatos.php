@@ -15,7 +15,7 @@ en un arreglo de objetos detalle como un atributo del objeto maestro
     }
 
 //sube a memoria declaraciones, recibe datos de interfaz y resultados de un query que carga varios objetos maestro 
-    $industria="7";
+    $industria="6";
 	$consultaBalance="select empresa, mercado, industria, infraestructura, bancos, enproceso, mercancias, clientes, hipotecas, proveedores, capitalsocial, utilidades from balances where empresa in (select empresa from balances where industria='$industria');";
 	$resultado=mysqli_query($conexion,$consultaBalance);
 
