@@ -1,2 +1,2 @@
 # 2023-I
-<html><body><a href="https://revista.polizona.com/2023/01/14/hello-world/">artículo</a></body></html>
+<html><body><a href="https://https://github.com/polizona/2023-I">Explicación</a></body></html>
