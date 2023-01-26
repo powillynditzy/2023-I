@@ -1,19 +1,14 @@
 <html>
-	
 <body>
 <div class="container">
 <div class="row align-items-center">
 <div class="col-12 align-self-center text-center p-4">
-<h1>Ingeniería del conocimiento</h1>
+<h1>Escribe tu unidad de aprendizaje</h1>
 <h1>Escribe tu nombre</h1>
 
-Agrupación: <br>
+<p>Usa esta interfaz html para recibir  los parámetros necesarios para armar query de la pregunta 5, 
+	modifica los archivos graba.php y recupera.php para ejecutar el query de la pregunta 5. </p>
 
-Escribir una interfaz html que reciba los parámetros necesarios para armar el siguiente query:
-
-create view conjunta as (select distinct mercado, idindustria,count(*)/(select count(*)from empresa) as conjunta from empresa group by mercado, idindustria)
-
-ejecutar el query con un php desde la interfaz<br>
  <br>
 
 <form action="recupera.php" method="get">
